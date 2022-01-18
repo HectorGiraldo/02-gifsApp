@@ -1,0 +1,21 @@
+<!-- <div class="row">
+    <div  *ngFor="let resultado of resultados" class="col-md-4 col-sm-6 animate__animated animate__fadeIn ">
+        <div class="card">
+            <img [src]="resultado.images.downsized_medium.url" [alt]="resultado.title" class="card-img-top">
+            <div class="car-body">
+                <p class="card-text">
+                    {{resultado.title}}
+                </p>
+            </div>
+        </div>
+    </div>
+</div> -->
+
+
+<div class="masonry">
+    <div *ngFor="let resultado of resultados" class="animate__animated animate__fadeIn">
+        <img [src]="resultado.images.downsized_medium.url" [alt]="resultado.title" class="card-img-top item">
+        
+    </div>
+
+</div>
